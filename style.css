@@ -14,6 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .main {
@@ -26,8 +27,10 @@ body {
 
 img {
   border-radius: 10px;
-  width: 620px;
-  margin: 10px;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0;
 }
 
 hr {
@@ -182,6 +185,7 @@ hr {
 
 @media (max-width: 768px) {
   .main {
+    width: 100%;
     max-width: 100%;
     border-radius: 0;
     padding: 0;
@@ -192,12 +196,10 @@ hr {
   }
 
   .img-container img {
-  margin: 0;
-  padding: 0;
-  width: 484px;
-  display: block;
-  border-radius: 0;
-}
+    width: 100%;
+    border-radius: 0;
+  }
+
   .nutrition li {
     padding: 10px 30px;
   }
